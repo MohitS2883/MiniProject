@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #DFF3E4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-size: 20px; /* Default font size */
+        }
+
+        h1 {
+            position: absolute;
+            top: 2%;
+            font-size: 24px; /* Increase font size for h1 */
+        }
+
+        #anscontainer, #sugcontainer {
+            text-align: center;
+            border: 2px solid #171738;
+            padding: 3%;
+            border-radius: 5%;
+            margin: 20px;
+            width: 40%;
+        }
+
+        label {
+            padding: 2%;
+            color: #3423A6;
+        }
+
+        ::selection{
+            background-color: #B4A0E5;
+            color: #DC602E;
+        }
+
+        @media screen and (max-width: 768px) {
+            #anscontainer, #sugcontainer {
+                width: 80%;
+            }
+
+            h1 {
+                font-size: 20px; /* Adjust font size for h1 on smaller screens */
+            }
+
+            body {
+                font-size: 14px; /* Adjust font size for body on smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Outcome:</h1>
+    <div id="anscontainer">
+        <img src="{{path}}" alt="alt-text"><br><br>
+        <label for="">The image belongs to <u>{{ans}}</u> terrain</label><br>
+    </div>
+    
+    <div id="sugcontainer">
+        Suggestions:<br>
+        {%for sugg in sugsend%}
+        <ul>
+            <li>{{sugg}}</li>
+        </ul>
+        {%endfor%}
+    </div>
+</body>
+</html>
