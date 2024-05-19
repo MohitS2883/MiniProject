@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+        #content-container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            width: 80%;
+            margin-top: 20px;
+        }
+        #text-container {
+            flex: 1;
+            padding: 20px;
+        }
+        #input-container {
+            flex: 1;
+            text-align: center;
+            border: 2px solid #ccc;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            margin-left: 20px;
+        }
+        #imageInput {
+            margin-top: 20px;
+            padding: 10px;
+            border: 2px dashed #ccc;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+            width: 300px;
+            outline: none;
+            cursor: pointer;
+        }
+        #uploadButton {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        #uploadButton:hover {
+            background-color: #0056b3;
+        }
+        #previewImage {
+            margin-top: 20px;
+            max-width: 300px;
+            max-height: 300px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Terrain Recognition</h1>
+    <ul>
+        <li>Please use Satellite images</li>
+        <li>4 Classes only:</li>
+        <ul>
+            <li>Sandy</li>
+            <li>Rocky</li>
+            <li>Grassy</li>
+            <li>Marshy</li>
+        </ul>
+    </ul>
+    <div id="input-container">
+        <form action="/trial" method="post" enctype="multipart/form-data">
+            <label for="imageInput">Select an image:</label><br>
+            <input type="file" id="imageInput" name="inpimage" accept="image/*"><br>
+            <button type="submit" id="uploadButton">Upload</button>
+        </form><br>
+        <img id="previewImage" src="" alt="">
+    </div>
+    <script>
+        const imageInput = document.getElementById('imageInput');
+        const previewImage = document.getElementById('previewImage')
+        function previewSelected(){
+            const file = imageInput.files[0];
+            if(file){
+                const reader = new FileReader();
+                reader.readAsDataURL(file);
+                reader.onload = function(e){
+                    previewImage.src = e.target.result;
+                }
+            }
+        }
+        imageInput.addEventListener('change',previewSelected);
+    </script>
+</body>
+</html>
