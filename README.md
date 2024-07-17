@@ -58,10 +58,10 @@ This project is a Terrain Recognition System that accurately identifies various 
 ![Terrain Recognition Output](screenshots/Terrain%20Recognition%20Results.png)  
 *Figure 3: Terrain Recognition results.*
 
-![Chatbot Home Page](screenshots/Chatbot%20Home%20Page.png)  
+![Chatbot Home Page](screenshots/ChatBot%20Home%20Page.png)  
 *Figure 4: Chatbot Home Page.*
 
-![Chatbot Reply](screenshots/Chatbot%20Reply.png)  
+![Chatbot Reply](screenshots/ChatBot%20Reply.png)  
 *Figure 5: Chatbot Reply to a query.*
 
 
