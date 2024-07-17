@@ -33,7 +33,7 @@ This project is a Terrain Recognition System that accurately identifies various 
 3. Open your browser and navigate to `http://127.0.0.1:5000/`.
 4. To start the Streamlit chatbot, run:
     ```bash
-    chainlit run langchain_falcon.py -w --port 8000
+    chainlit run langchainlogic.py -w --port 8000
     ```
 
 ## Project Structure
