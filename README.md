@@ -26,15 +26,26 @@ This project is a Terrain Recognition System that accurately identifies various 
 
 ### Running the Application
 1. Ensure the pre-trained model (`model.keras`) is in the project directory.
-2. Run the Flask application:
+2. Generate your Hugging Face API token:
+    - Sign up or log in to [Hugging Face](https://huggingface.co/).
+    - Navigate to your [account settings](https://huggingface.co/settings/tokens).
+    - Create a new token and copy it.
+3. Add the Hugging Face API token to the `.env` file:
+    - Create a `.env` file in the project directory if it doesn't exist.
+    - Add the following line to the `.env` file:
+      ```bash
+      HUGGINGFACE_API_TOKEN=Your_HugginfFace_token_here_without_quotes_
+      ```
+4. Run the Flask application:
     ```bash
     python app.py
     ```
-3. Open your browser and navigate to `http://127.0.0.1:5000/`.
-4. To start the Streamlit chatbot, run:
+5. Open your browser and navigate to `http://127.0.0.1:5000/`.
+6. To start the Streamlit chatbot, run:
     ```bash
     chainlit run langchainlogic.py -w --port 8000
     ```
+
 
 ## Project Structure
 - `app.py`: Main application file.
