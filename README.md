@@ -1,7 +1,7 @@
 # Terrain Recognition System using Satellite Images
 
 ## Overview
-This project is a Terrain Recognition System that detects various terrains such as sandy, rocky, grassy, and marshy from satellite images. It also includes a chatbot feature hosted using Streamlit. This project was done as a college mini project with team members Jaswanth, Pradyumn, and Chandana.
+This project is a Terrain Recognition System that accurately identifies various terrains—such as sandy, rocky, grassy, and marshy—from satellite images. Developed as a college mini project by a team of four members including myself, Jaswanth, Pradyumn, and Chandana, it includes an integrated chatbot feature hosted using Streamlit. This system enhances terrain-related activities by providing precise analysis and classification of environmental landscapes.
 
 ## Features
 - Classifies terrains into four categories: Sandy, Rocky, Grassy, and Marshy.
