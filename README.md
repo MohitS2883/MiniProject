@@ -46,3 +46,21 @@ This project is a Terrain Recognition System that accurately identifies various 
 - `Terrainrecg done.ipynb`: Jupyter Notebook for model training and testing.
 - `.env`: Used to store your Huggingface Hub API Token
 - `chainlit.md `: You can include the chatbot startup message here
+
+## Project Preview
+
+![Home Page](screenshots/Home Page.png)
+*Figure 1: Home Page.*
+
+![Terrain Recognition Input](screenshots/Terrain Recognition Input.png)
+*Figure 2: Interface for terrain recognition input.*
+
+![Terrain Recognition Output](screenshots/Terrain Recognition Results.png)
+*Figure 3: Terrain Recognition results.*
+
+![Chatbot Home Page](screenshots/Chatbot Home Page.png)
+*Figure 4: Chatbot Home Page.*
+
+![Chatbot Reply](screenshots/Chatbot Reply.png)
+*Figure 5: Chatbot Reply to a query.*
+
