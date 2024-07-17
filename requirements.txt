@@ -1,0 +1,11 @@
+Flask
+tensorflow
+keras
+streamlit
+python-dotenv
+chainlit
+numpy
+langchain
+HuggingFaceHub
+PromptTemplate
+LLMChain
